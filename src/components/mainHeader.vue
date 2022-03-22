@@ -1,12 +1,15 @@
 <template>
   <header>
+      <div class="container">
         <img src="../assets/img/dc-logo.png" alt="">
         <ul>
             <li v-for="(link, index) in links" :key="index">
                 <a :href="link.herf">{{link.text}}</a>
             </li>
-       
+    
         </ul>
+      </div>
+      
   </header>
 </template>
 
@@ -63,21 +66,32 @@ data () {
 </script>
 
 <style lang="scss" scoped>
-header {
+@import "../assets/styles/main";
+header .container {
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    background-color: white;
+    justify-content: space-between;
+    background-color: $mainBgHeader;
     padding: 1rem 0;
+    img {
+        max-height: 4rem;
+    }
+    ul {
+        margin: 0 -1rem;
+    }
 }
 li {
     display: inline-block;
     a {
-        color: black;
+        color: $textColor;
         text-decoration: none;
         margin: 0 1rem;
+        text-transform: uppercase;
+        &:hover {
+            color: $mainColor;
+        }
     }
 
 }
-</style>>
+</style>
     
