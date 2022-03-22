@@ -6,7 +6,9 @@
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import main-header from './components/main-header.vue'
+import main-content from './components/main-content.vue'
+import main-footer from './components/main-footer.vue'
 
 export default {
   name: 'App',
