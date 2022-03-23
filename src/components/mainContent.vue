@@ -115,8 +115,7 @@ export default {
         position: relative;
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
+        align-items: stretch;
         padding: 2rem 0 3rem 0;
         .current-series-banner {
           position: absolute;
@@ -138,6 +137,8 @@ export default {
   .btn-load-more {
     position: absolute;
     bottom: .7rem;
+    left: 50%;
+    transform: translateX(-50%);
     display: block;
     background-color: $mainColor;
     border: none;

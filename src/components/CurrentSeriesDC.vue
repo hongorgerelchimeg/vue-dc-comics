@@ -2,8 +2,9 @@
   <div class="card-holder">
     <div class="card">
         <img :src="img" :alt="imgAlt">
-        <h3>{{seriesText}}</h3>
+
     </div>
+    <h3>{{seriesText}}</h3>
   </div>
 
 
@@ -24,16 +25,12 @@ props: {
   @import "../assets/styles/main";
   .card-holder {
     width: calc(100% / 6 - 1rem);
-    height: 9.5rem;
+    height: 100%;
     margin: 0 .5rem 2rem .5rem;
   }
-
   .card {
-    width: 100%;
-    height: 100%;
+    height: 9.5rem;
     margin-bottom: .5rem;
-
-
     img {
       width: 100%;
       height: 100%;
