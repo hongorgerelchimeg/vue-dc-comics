@@ -6,10 +6,10 @@
             <li @click="setActiveIndex(index)" v-for="(link, index) in links" :key="index" >
                 <a :class="{active: index == activeIndex}" :href="link.herf">{{link.text}}</a>
             </li>
-    
+
         </ul>
       </div>
-      
+
   </header>
 </template>
 
@@ -22,43 +22,43 @@ export default {
             links: [
                 {
                     text: 'characters',
-                    herf: "#" 
+                    herf: "#"
                 },
                 {
                     text: 'comics',
-                    herf: "#" 
+                    herf: "#"
                 },
                 {
                     text: 'movies',
-                    herf: "#" 
+                    herf: "#"
                 },
                 {
                     text: 'tv',
-                    herf: "#" 
+                    herf: "#"
                 },
                 {
                     text: 'games',
-                    herf: "#" 
+                    herf: "#"
                 },
                 {
                     text: 'collectibles',
-                    herf: "#" 
+                    herf: "#"
                 },
                 {
                     text: 'videos',
-                    herf: "#" 
+                    herf: "#"
                 },
                 {
                     text: 'fans',
-                    herf: "#" 
+                    herf: "#"
                 },
                 {
                     text: 'news',
-                    herf: "#" 
+                    herf: "#"
                 },
                 {
                     text: 'shop',
-                    herf: "#" 
+                    herf: "#"
                 }
             ]
         }
@@ -73,6 +73,7 @@ export default {
 
 <style lang="scss" scoped>
 @import "../assets/styles/main";
+
 header .container {
     display: flex;
     align-items: center;
@@ -83,17 +84,18 @@ header .container {
         max-height: 4rem;
     }
     ul {
-        margin: 0 -.8rem;
+        margin: 0 -.5rem;
         height: 100%;
-       
+
     }
+
 }
 li {
     display: inline-block;
     a {
         color: $textColor;
         text-decoration: none;
-        margin: 0 .8rem;
+        margin: 0 .5rem;
         text-transform: uppercase;
         &:hover {
             color: $mainColor;
@@ -101,23 +103,26 @@ li {
     &.active {
             color: $mainColor;
             position: relative;
-            
-            
-        
+
+
+
         &:after {
-                position: absolute;
-                bottom: -42px;
-                background-color: $mainColor;
-                height: 4px;
-                width: 100%;
-                display: block;
-                content: '';
-                margin: 0 .8rem;
-        }
-    }
+            position: absolute;
+            bottom: -41px;
+            background-color: $mainColor;
+            height: 5px;
+            width: 100%;
+            display: block;
+            content: '';
+            margin: 0 .5rem;
+            transition: transform 1s;
+            &:hover {
+                transform: scaleY(1);
+            }
+          }
+      }
     }
 
 
 }
 </style>
-    
