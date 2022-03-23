@@ -25,7 +25,7 @@ props: {
   .card-holder {
     margin: 0 .5rem 2rem .5rem;
     width: calc(100% / 6 - 1rem);
-    height: 12rem;
+    height: 9.5rem;
   }
 
   .card {
@@ -43,6 +43,7 @@ props: {
     }
   }
   h3 {
+      margin-top: .3rem;
       text-transform: uppercase;
       font-size: 11px;
       color: white;

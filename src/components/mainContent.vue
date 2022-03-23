@@ -9,9 +9,10 @@
         :img="series.thumb"
         :imgAlt="series.series"
         :seriesText="series.series"
-
       />
+
       <button class="btn-load-more">LOAD MORE</button>
+      <div class="current-series-banner">CURRENT SERIES</div>
     </div>
   </main>
 </template>
@@ -111,11 +112,19 @@ export default {
       background-color: $mainBgContent;
       color: white;
       .container {
+        position: relative;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
         padding: 2rem 0 1rem 0;
+        .current-series-banner {
+          position: absolute;
+          top: -10px;
+          left: 0;
+          padding: .3rem 1rem;
+          background-color: $mainColor;
+        }
       }
   }
   .jumbo {
@@ -126,13 +135,14 @@ export default {
     background-size: cover;
   }
   .btn-load-more {
+    display: block;
     background-color: $mainColor;
     border: none;
     color: white;
     padding: 6px 32px;
     text-align: center;
     text-decoration: none;
-    font-size: 10px;
+    font-size: 9px;
     margin-top: 1rem;
     cursor: pointer;
   }
