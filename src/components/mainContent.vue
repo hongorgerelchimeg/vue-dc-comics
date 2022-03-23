@@ -117,13 +117,14 @@ export default {
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-        padding: 2rem 0 1rem 0;
+        padding: 2rem 0 3rem 0;
         .current-series-banner {
           position: absolute;
           top: -10px;
           left: 0;
           padding: .3rem 1rem;
           background-color: $mainColor;
+
         }
       }
   }
@@ -135,11 +136,13 @@ export default {
     background-size: cover;
   }
   .btn-load-more {
+    position: absolute;
+    bottom: .7rem;
     display: block;
     background-color: $mainColor;
     border: none;
     color: white;
-    padding: 6px 32px;
+    padding: 8px 40px;
     text-align: center;
     text-decoration: none;
     font-size: 9px;

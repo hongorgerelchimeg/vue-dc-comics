@@ -23,9 +23,9 @@ props: {
 <style scoped lang="scss">
   @import "../assets/styles/main";
   .card-holder {
-    margin: 0 .5rem 2rem .5rem;
     width: calc(100% / 6 - 1rem);
     height: 9.5rem;
+    margin: 0 .5rem 2rem .5rem;
   }
 
   .card {
